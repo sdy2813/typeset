@@ -32,6 +32,8 @@ latex -v
 
 ## Install code-server
 
+ref: [install code server by conda](https://github.com/sdy2813/bioprogram/blob/main/Linux/code-server.md)
+
 run code-server like this
 
 ```{sh}
