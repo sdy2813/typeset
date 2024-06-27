@@ -30,6 +30,20 @@ latex -v
 
 ## Install Code Server and LaTeX Workshop Extension
 
+## Install code-server
+
+run code-server like this
+
+```{sh}
+export PATH="/your_path/texlive/bin/x86_64-linux:/usr/bin:$PATH"
+code-server
+```
+
+
+
+### install LaTeX Workshop
+
+
 Search `LaTeX Workshop` on your code-server and install it
 
 ![](https://pic3.zhimg.com/80/v2-37df048ea711ccd6191a06763899d952_1440w.webp)
@@ -41,6 +55,7 @@ Search `LaTeX Workshop` on your code-server and install it
 
 the path may be `/Your_Home/.local/share/code-server/User/settings.json`
 
+you can just copy the follow code to yours. notice, change `/home/xumeng/app/texlive`!
 
 ```{json}
 {
@@ -100,13 +115,22 @@ the path may be `/Your_Home/.local/share/code-server/User/settings.json`
 }
 ```
 
+## Install Windows Fonts on Your Accounts
 
+just copy my file to your path
 
+```{sh}
+cp -r /home/xumeng/.local/share/fonts /your_home/.local/share/
+```
 
+fresh your fonts
 
+```{sh}
+fc-cache -f -v
+fc-list | grep "Arial"
+```
 
-
-
+Now, you'd use Chinese Words on Latex.
 
 
 
