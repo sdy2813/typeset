@@ -136,9 +136,9 @@ Now, you'd use Chinese Words on Latex.
 
 ## Reference
 
-1. ![linux no root 安装arial字体](https://www.jianshu.com/p/b54f62b8ca29)
-1. ![Visual Studio Code (vscode)配置LaTeX](https://zhuanlan.zhihu.com/p/166523064)
-1. ![如何在不使用root权限下安装Latex ](http://xuzhougeng.com/archives/install-latex-without-root)
+1. [linux no root 安装arial字体](https://www.jianshu.com/p/b54f62b8ca29)
+1. [Visual Studio Code (vscode)配置LaTeX](https://zhuanlan.zhihu.com/p/166523064)
+1. [如何在不使用root权限下安装Latex ](http://xuzhougeng.com/archives/install-latex-without-root)
 
 
 
