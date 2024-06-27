@@ -42,13 +42,63 @@ Search `LaTeX Workshop` on your code-server and install it
 the path may be `/Your_Home/.local/share/code-server/User/settings.json`
 
 
-
-
-
-
-
-
-
+```{json}
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-xelatex",
+            "command": "/home/xumeng/app/texlive/bin/x86_64-linux/latexmk",
+            "args": [
+                "-xelatex",
+                // "-f",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                // "-pdf",
+                "%DOCFILE%"
+            ],
+            "env": {
+                "PATH": "/home/xumeng/app/texlive/bin/x86_64-linux:/usr/bin"
+            }
+        },
+        {
+            "name": "xelatex",
+            "command": "/home/xumeng/app/texlive/bin/x86_64-linux/xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "latexmk-xelatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+    ],
+    "files.autoSave": "onFocusChange",
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "git.ignoreLegacyWarning": true,
+    "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    "svg.preview.mode": "svg",
+    "editor.formatOnSave": true,
+}
+```
 
 
 
