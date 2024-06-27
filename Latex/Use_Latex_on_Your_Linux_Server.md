@@ -35,7 +35,11 @@ Search `LaTeX Workshop` on your code-server and install it
 ![](https://pic3.zhimg.com/80/v2-37df048ea711ccd6191a06763899d952_1440w.webp)
 
 
+### config your LaTeX Workshop
 
+`Ctrl + Shift + p` and enter `setj`, select `Open User Settings JSON`
+
+the path may be `/Your_Home/.local/share/code-server/User/settings.json`
 
 
 
